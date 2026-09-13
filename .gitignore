@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# PyInstaller — сборочные артефакты (пересоздаются из ScanmatikLogger.spec)
+/build/
+/dist/
+
+# .NET-мост (bridge/) — сборочные артефакты (пересоздаются build_bridge.ps1)
+bridge/bin/
+bridge/obj/
+bridge/publish/
+
+# CAN/UDS-логи — реальные данные конкретного автомобиля с шины, не код
+logs/*.csv
+!logs/.gitkeep
+
+# служебное
+.vscode/
+*.swp
+Thumbs.db
